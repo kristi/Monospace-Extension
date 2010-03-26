@@ -2,19 +2,19 @@
   "name": "Monospace Font Size Fix",
   "version": "1.0",
 
-  "description": "Make monospaced (fixed-width) font normal sized.",
+  "description": "Make monospaced (fixed-width) font normal sized. :)",
   
   "icons":{ "48":"monospace_48.png",
 		   "128":"monospace_128.png"},
            
   "content_scripts": [
     {
-      "matches": ["http://*/*", "https://*/*", "file://*"],
+      "matches": ["http://*/*", "https://*/*"],
       "css": ["fix.css"],
 	  "run_at": "document_start"
     },
     {
-      "matches": ["http://*/*", "https://*/*", "file://*"],
+      "matches": ["http://*/*", "https://*/*"],
       "js": ["fix.js"],
 	  "run_at": "document_end"
     }
