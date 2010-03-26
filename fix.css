@@ -1,0 +1,16 @@
+/* Fix for extra-small monospace font size
+   Apparently the fonts are sized normally if there is more than
+   one font family specified.  Specifying only "monospace" causes
+   the extra-small font problem. Specifying two font-families
+   does NOT apply the tiny monospace font size.
+   Reference:
+   http://virtuelvis.com/archives/2005/02/monospace-firefox-braindeath
+   http://archivist.incutio.com/viewlist/css-discuss/96389
+   http://en.wikipedia.org/wiki/User:Davidgothberg/Test59
+   http://webkit.org/blog/67/strange-medium/
+   https://bugs.webkit.org/show_bug.cgi?id=19161
+*/
+tt, code, pre, textarea {
+    /*monospace size fix (inserted by monospace extension)*/
+    font-family: monospace, sans-serif;
+}
