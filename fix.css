@@ -11,6 +11,9 @@
    https://bugs.webkit.org/show_bug.cgi?id=19161
 */
 tt, code, pre, textarea {
-    /*monospace size fix (inserted by monospace extension)*/
+    /*monospace size fix (inserted by chrome monospace extension)*/
     font-family: monospace, sans-serif;
+}
+textarea {
+    font-size: 1em;
 }
